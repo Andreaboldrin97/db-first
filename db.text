@@ -5,19 +5,26 @@ NOME TABELLA : Maccchine
 
 LEGGENDA COLONNE :
 
-ID - INT -
-MARCA - STRING
-TARGA - STRING
-KM_PERCORSI - MEDIUMINT
-MODELLO - STRING
-ANNO_DI_IMMATRICOLAZIONE - DATA
-PREZZO - FLOAT(6,2)
-PACCHETTI_INCLUSI - STRING
-SCONTO - INT 
-TIPO_DI_CAMBIO - STRING
-ALIMENTAZIONE - STRING
-POTENZA - STRING
-NUMERO_PORTE - INT
-NUMERO_SEDILI - INT
-COLORE - STRING
-MATERIALE_DEGLI_INTERNI - STRING
+[NOME COLONNA]                   -[TYPE]                      -[ATTRIBUTES]
+
+ID                               - INT - MEDIUMINT            - PRIMARY_KEY - AUTO_INCREMENT - UNIQUE - NOTNULL
+MARCA                            - STRING - VARCHAR(30)       - NOTNULL
+TARGA                            - STRING - VARCHAR(7)        - NOTNULL
+KM_PERCORSI                      - INT - MEDIUMINT            - NOTNULL
+MODELLO                          - STRING - VARCHAR(60)       - NOTNULL
+NUMERO_TELAIO                    - STRING - VARCHAR(20)       - NOTNULL - UNIQUE
+ANNO_DI_IMMATRICOLAZIONE         - DATA                       - NOTNULL
+PREZZO_VENDITA                   - FLOAT(6,2)                 - NOTNULL
+PREZZO_ACQUISTO                  - FLOAT(6,2)                 - NULL
+PACCHETTI_INCLUSI                - STRING VARCHAR(255)        - NULL
+SCONTO                           - INT - TINYINT              - NULL
+TIPO_DI_CAMBIO                   - STRING - VARCHAR(17)       - NOTNULL
+ALIMENTAZIONE                    - STRING - VARCHAR(20)       - NOTNULL
+POTENZA                          - STRING - VARCHAR(7)        - NOTNULL
+NUMERO_PORTE                     - INT - TINYINT              - NOTNULL
+NUMERO_SEDILI                    - INT - TINYINT              - NOTNULL
+COLORE_VERNICE                   - STRING - VARCHAR(20)       - NOTNULL
+MATERIALE_DEGLI_INTERNI          - STRING - VARCHAR(70)       - NULL
+GRANDEZZA_CERCHI                 - INT - TINYINT              - NULL
+NEO_PATENTATI                    - INT - TINYINT              - NONULL - DEFAULT(0) 
+AUTO_INCIDENTATA                 - INT - TINYINT              - NOTNULL - DEFAULT(0)
