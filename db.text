@@ -2,3 +2,22 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 
 
 NOME TABELLA : Maccchine 
+
+LEGGENDA COLONNE :
+
+ID - 
+MARCA -
+TARGA -
+KM_PERCORSI -
+MODELLO - 
+ANNO_DI_PRODUZIONE -
+PREZZO -
+PACCHETTI_INCLUSI -
+SCONTO -
+TIPO_DI_CAMBIO -
+ALIMENTAZIONE -
+POTENZA - 
+NUMERO_PORTE -
+NUMERO_SEDILI -
+COLORE -
+MATERIALE_DEGLI_INTERNI 
